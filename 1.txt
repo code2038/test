@@ -1,0 +1,19 @@
+git log不显示中文提交信息
+解决:
+1.git config --global core.quotepath false
+git config --global gui.encoding utf-8
+git config --global i18n.commit.encoding utf-8
+git config --global i18n.logoutputencoding utf-8
+$env:LESSCHARSET='utf-8'
+2、在系统环境变量中添加变量LESSCHARSET为utf-8.
+
+
+win10 cmd vim中文乱码解决:
+找到VIM安装目录下的_vimrc文件：
+在文件最前面添加：
+
+set fileencodings=utf-8,gb2312,gbk,gb18030
+set termencoding=utf-8
+set fileformats=unix
+set encoding=prc
+不成功就everything找到所有的vimrc如上修改  
